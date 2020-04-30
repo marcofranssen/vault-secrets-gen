@@ -54,6 +54,14 @@ you use the published checksums to verify integrity.
 
 ## Usage & API
 
+### Policy requirements
+
+```hcl
+path "gen/password" {
+  capabilities = ["create", "update"]
+}
+```
+
 ### Generate Password
 
 Generates a random, high-entropy password with the specified number of
